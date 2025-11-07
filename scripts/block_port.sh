@@ -1,4 +1,5 @@
 #!/bin/bash
 PORT=$1
-sudo ufw deny $PORT/tcp
-echo "🧱 Blocked TCP port $PORT via UFW."
+sudo iptables -I ufw-before-input -p tcp --dport "$PORT" -j DROP;
+sudo netfilter-persistent save
+echo "🧱 Blocked TCP port $PORT."
