@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Discord Port Manager Bot
 
 A simple, secure Discord bot that lets an authorized user view, close, block, and unblock ports on an Ubuntu server (designed for EC2). Intended for small teams — includes bot.py, helper scripts, and a systemd unit example.
@@ -471,8 +470,3 @@ Add role-based authorization (allow role members, not just single user id).
 Add TLS/web UI for status and quick actions (FastAPI + Uvicorn).
 
 Add Dockerfile for containerized deploys.
-
-15. License
-
-Use MIT (or your preferred license). Add LICENSE file.
->>>>>>> cca70cd97782c63aaebe087d663fce27bede1bba
