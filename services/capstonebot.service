@@ -1,0 +1,14 @@
+[Unit]
+Description=Capstone Discord Bot
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/discord-port-manager-bot
+ExecStart=/home/ubuntu/discord-port-manager-bot/venv/bin/python3 /home/ubuntu/discord-port-manager-bot/bot.py
+Restart=always
+Environment="DISCORD_TOKEN=your_discord_token"
+Environment="AUTHORIZED_USER_ID=your_user_id"
+
+[Install]
+WantedBy=multi-user.target

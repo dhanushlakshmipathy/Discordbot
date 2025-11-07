@@ -1,0 +1,6 @@
+# Core Discord bot library
+discord.py==2.3.2
+
+# For loading environment variables from .env files
+python-dotenv==1.0.1
+
