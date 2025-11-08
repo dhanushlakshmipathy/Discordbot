@@ -56,6 +56,8 @@ Enable "Message Content Intent" for the bot in the Developer Portal.
    ```sh
    python3 -m venv venv
    source venv/bin/activate
+   sudo apt update
+   sudo apt install netfilter-persistent iptables-persistent -y
    pip install -r requirements.txt
    ```
 
@@ -73,6 +75,7 @@ Enable "Message Content Intent" for the bot in the Developer Portal.
 
 5. Run:
    ```sh
+   
    source venv/bin/activate
    python3 bot.py
    ```
